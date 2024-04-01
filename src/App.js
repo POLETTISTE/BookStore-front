@@ -6,9 +6,9 @@ import "./App.css";
 import Books from "./components/Books";
 import axios from "axios";
 
-// const API_URL = "http://localhost:3000/api/v1/books";
+const API_URL = "http://localhost:3000/api/v1/books";
 
-const API_URL = "https://booksback-a50d1cc499e9.herokuapp.com/api/v1/books";
+// const API_URL = "https://booksback-a50d1cc499e9.herokuapp.com/api/v1/books";
 
 const getApiData = () => {
   return axios.get(API_URL).then((response) => response.data);
